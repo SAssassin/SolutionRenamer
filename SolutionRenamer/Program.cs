@@ -31,18 +31,20 @@ namespace SolutionRenamer
             var fileExtensions = configuration["FileExtension"];
             string[] filter = fileExtensions.Split(',');
 
-            Console.WriteLine("Input your old company name:");
-            var oldCompanyName = Console.ReadLine();
+            //Console.WriteLine("Input your old company name:");
+            //var oldCompanyName = Console.ReadLine();
+            var oldCompanyName = string.Empty;
             Console.WriteLine("Input your old project name:");
             var oldProjectName = Console.ReadLine();
 
-            Console.WriteLine("Input your new company name:");
-            var newCompanyName = Console.ReadLine();
+            //Console.WriteLine("Input your new company name:");
+            //var newCompanyName = Console.ReadLine();
+            var newCompanyName = string.Empty;
             Console.WriteLine("Input your new project name:");
             var newProjectName = Console.ReadLine();
 
             //项目根路径
-            Console.WriteLine("Input folder:");
+            Console.WriteLine("Input folder:" + System.AppDomain.CurrentDomain.BaseDirectory);
             var rootDir = Console.ReadLine();
 
             Stopwatch sp = new Stopwatch();
